@@ -1,0 +1,500 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "Winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_myButton            REGISTRY DISCARDABLE    "res\\myButton.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFOMESSAGE DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EXIT DIALOG DISCARDABLE  0, 0, 310, 182
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,69,141,50,12
+    PUSHBUTTON      "OK",IDC_OK,15,141,50,12
+    LTEXT           "(c) 2003 - 2005  DeltaComputer && Network, Vladimir Novick ",
+                    IDC_STATIC,100,114,189,8
+    LTEXT           "support@desk4u.net",IDC_STATIC,19,158,108,8
+    GROUPBOX        "",IDC_STATIC,7,125,296,50
+    GROUPBOX        "Exit  My Desktop Toolbox  3.2  ?",IDC_STATIC,7,125,296,
+                    50
+    CONTROL         212,IDC_DELIMITER,"Static",SS_BITMAP,7,105,296,6
+    LTEXT           "My Desktop Toolbox  ( Build: 3.2.4.1 )",IDC_STATIC,126,
+                    142,120,10
+    CONTROL         "",IDC_ICON_UNLOCK,"Static",SS_BITMAP,254,139,15,13
+    CONTROL         "",IDC_TRYING,"Static",SS_BITMAP,7,5,299,97
+END
+
+IDD_MAINWINDOW DIALOG DISCARDABLE  0, 0, 106, 65
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_TOOLBOX DIALOGEX 0, 0, 186, 94
+STYLE DS_SYSMODAL | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_EDITDESKTOPNAME DIALOG DISCARDABLE  0, 0, 346, 122
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Desktop Management"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,149,78,43,13
+    PUSHBUTTON      "Cancel",2,197,79,43,13
+    EDITTEXT        IDC_EDIT_DESKTOP_NAME,167,7,168,13,ES_AUTOHSCROLL
+    CONTROL         254,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,5,3,133,
+                    108
+    LTEXT           "Title:",IDC_STATIC,147,9,18,10
+    EDITTEXT        IDC_EDIT_DESKTOP_COMMENTS,147,37,187,31,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Comments :",IDC_STATIC,148,25,56,10
+    PUSHBUTTON      "New",IDC_BUTTON_NEW,149,100,43,13
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,197,100,43,13
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,246,79,43,13
+END
+
+IDD_SHAREWAREMESSAGE DIALOG DISCARDABLE  0, 0, 310, 122
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "My Desktop Toolbox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,13,96,50,14
+    CONTROL         210,IDC_STATIC,"Static",SS_BITMAP,6,5,295,86
+    LTEXT           "(c) DeltaComputer && Network, Vladimir Novick \n                                         http://www.myDesktopToolbox.com",
+                    IDC_STATIC,80,97,208,17
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 313, 134
+STYLE DS_SYSMODAL | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MyDeskopToolbox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,5,115,48,12
+    LTEXT           "",IDC_TEXT_MESSAGE,60,115,243,12
+END
+
+IDD_ABOUT25 DIALOG DISCARDABLE  0, 0, 204, 135
+STYLE DS_SYSMODAL | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_KEY,14,69,129,18,ES_AUTOHSCROLL | ES_NOHIDESEL
+    EDITTEXT        IDC_EDIT_COMUTERID,17,10,127,21,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_USER_ID,15,39,130,16,ES_AUTOHSCROLL
+END
+
+IDD_NAGSCREEN DIALOGEX 0, 0, 186, 94
+STYLE DS_SYSMODAL | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_EXIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_EDITDESKTOPNAME, DIALOG
+    BEGIN
+        RIGHTMARGIN, 340
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_SHAREWAREMESSAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 307
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 311
+        TOPMARGIN, 3
+    END
+
+    IDD_ABOUT25, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 129
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NAG_SCREEN          BITMAP  DISCARDABLE     "res\\nag_screen.bmp"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_DesktopToolbox      REGISTRY MOVEABLE PURE  "DesktopToolbox.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MyTooltip DIALOG DISCARDABLE  0, 0, 186, 94
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_CopyMessage DIALOG DISCARDABLE  0, 0, 301, 95
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Copy Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,120,68,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MyTooltip, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CopyMessage, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MAINWINDOW          BITMAP  DISCARDABLE     "res\\MainWindow.bmp"
+IDB_HELP                BITMAP  DISCARDABLE     "res\\help.bmp"
+IDB_CLOSE               BITMAP  DISCARDABLE     "res\\close.bmp"
+IDB_HELP_ON             BITMAP  DISCARDABLE     "res\\help_ON.bmp"
+IDB_CLOSE_ON            BITMAP  DISCARDABLE     "res\\close_ON.bmp"
+IDB_TRYING              BITMAP  DISCARDABLE     "res\\trying.bmp"
+IDB_DELIMITER           BITMAP  DISCARDABLE     "res\\delimiter.bmp"
+IDB_TRIAL_KEY_UNLOCK    BITMAP  DISCARDABLE     "res\\trial_key_unlock.bmp"
+IDB_TRIAL_KEY_LOCK      BITMAP  DISCARDABLE     "res\\trial_key_lock.bmp"
+IDB_LEFT_SCREEN         BITMAP  DISCARDABLE     "res\\left_screen.bmp"
+IDB_RIGHT_SCREEN        BITMAP  DISCARDABLE     "res\\right_screen.bmp"
+IDB_EXIT1_ON            BITMAP  DISCARDABLE     "res\\exit1_on.bmp"
+IDB_EXIT1_OFF           BITMAP  DISCARDABLE     "res\\exit1_off.bmp"
+IDB_WEB_NOTE_OFF        BITMAP  DISCARDABLE     "res\\web_note_off.bmp"
+IDB_WEB_NOTE_ON         BITMAP  DISCARDABLE     "res\\web_note_on.bmp"
+IDB_WEB_LINK_OFF        BITMAP  DISCARDABLE     "res\\web_link_off.bmp"
+IDB_TOOLS_OFF           BITMAP  DISCARDABLE     "res\\tools_off.bmp"
+IDB_TOOLS_ON            BITMAP  DISCARDABLE     "res\\tools_on.bmp"
+IDB_SCRIPT_ON           BITMAP  DISCARDABLE     "res\\script_on.bmp"
+IDB_SCRIPT_OFF          BITMAP  DISCARDABLE     "res\\script_off.bmp"
+IDB_WRITE_TOOLS_ON      BITMAP  DISCARDABLE     "res\\write_tools_on.bmp"
+IDB_WRITE_TOOLS_OFF     BITMAP  DISCARDABLE     "res\\write_tools_off.bmp"
+IDB_FOLDER              BITMAP  DISCARDABLE     "res\\Folder.bmp"
+IDB_RUN_SELECTED        BITMAP  DISCARDABLE     "res\\run_selected.bmp"
+IDB_ITEMDEFAULT         BITMAP  DISCARDABLE     "res\\IDB_ITEMDEFAULT.bmp"
+IDB_ITEMDEFAULT_N       BITMAP  DISCARDABLE     "res\\IDB_ITEMDEFAULT_N.bmp"
+IDB_CHECK               BITMAP  DISCARDABLE     "res\\IDB_CHECK.bmp"
+IDB_MYFOLDER            BITMAP  DISCARDABLE     "res\\myFolder.bmp"
+IDB_DESKTOP_ON          BITMAP  DISCARDABLE     "res\\desktop_on.bmp"
+IDB_DESKTOP_OFF         BITMAP  DISCARDABLE     "res\\desktop_off.bmp"
+IDB_MENU_HELP           BITMAP  DISCARDABLE     "res\\MENU_HELP.bmp"
+IDB_MENU_ABOUT          BITMAP  DISCARDABLE     "res\\MENU_ABOUT.bmp"
+IDB_MENU_CONFIGURATION  BITMAP  DISCARDABLE     "res\\MENU_CONFIGURATION.bmp"
+IDB_MENU_WWW            BITMAP  DISCARDABLE     "res\\MENU_WWW.bmp"
+IDB_HELP_B              BITMAP  DISCARDABLE     "res\\help_b.bmp"
+IDB_MENU_KEY            BITMAP  DISCARDABLE     "res\\MENU_KEY.bmp"
+IDB_WINDOWS_DESKTOP     BITMAP  DISCARDABLE     "res\\WINDOWS_DESKTOP.bmp"
+IDB_MYFOLDER_OPEN       BITMAP  DISCARDABLE     "res\\myFolder_open.bmp"
+IDB_SHORTCUT            BITMAP  DISCARDABLE     "res\\SHORTCUT.bmp"
+IDB_SHORTCUT_URL        BITMAP  DISCARDABLE     "res\\SHORTCUT_URL.bmp"
+IDB_SHORTCUT_DESKTOP    BITMAP  DISCARDABLE     "res\\SHORTCUT_DESKTOP.bmp"
+IDB_EDIT_NAME_BG        BITMAP  DISCARDABLE     "res\\EDIT_NAME_BG.bmp"
+IDB_MYFOLDER_EMPTY      BITMAP  DISCARDABLE     "res\\myFolderEmpty.bmp"
+IDB_SHORTCUT_DESKTOP_EMPTY BITMAP  DISCARDABLE     "res\\SHORTCUT_DESKTOP_EMPTY.bmp"
+IDB_TRIAL_EXPIRED       BITMAP  DISCARDABLE     "res\\TITLE_EXPIRED.bmp"
+IDB_TITLE_purchase      BITMAP  DISCARDABLE     "res\\TITLE_purchase.bmp"
+IDB_SCREEN_25           BITMAP  DISCARDABLE     "res\\about25.bmp"
+IDB_OK_OF               BITMAP  DISCARDABLE     "res\\ok_of.bmp"
+IDB_OK_ON               BITMAP  DISCARDABLE     "res\\ok_on.bmp"
+IDB_KEY_LOCK            BITMAP  DISCARDABLE     "res\\key_lock.bmp"
+IDB_KEY_UNLOCK          BITMAP  DISCARDABLE     "res\\key_unlock.bmp"
+IDB_info_but            BITMAP  DISCARDABLE     "res\\info_but.bmp"
+IDB_TITLE_COPY_TO       BITMAP  DISCARDABLE     "res\\TITLE_copy_to.bmp"
+IDB_RIGHT_LAYAUT        BITMAP  DISCARDABLE     "res\\right_layaut.bmp"
+IDB_LEFT_LAYAUT         BITMAP  DISCARDABLE     "res\\left_layaut.bmp"
+IDB_TOP_L               BITMAP  DISCARDABLE     "res\\top_layaut.bmp"
+IDB_HIDE_BOX            BITMAP  DISCARDABLE     "res\\hide_box.bmp"
+IDB_SHOW_BOX            BITMAP  DISCARDABLE     "res\\show_box.bmp"
+IDB_EXIT_MY_DESKTOPTOOLBOX BITMAP  DISCARDABLE     "res\\exit_mydesktoptoolbox.bmp"
+IDB_TOP_SCREEN          BITMAP  DISCARDABLE     "res\\top_screen.bmp"
+IDB_WEB_LINK_ON         BITMAP  DISCARDABLE     "res\\web_link_on.bmp"
+IDB_WORD_DOCUMENT       BITMAP  DISCARDABLE     "res\\WORD_DOCUMENT.bmp"
+IDB_PDF_DOC             BITMAP  DISCARDABLE     "res\\PDF_DOC.bmp"
+IDB_HTML_DOC            BITMAP  DISCARDABLE     "res\\HTML_DOC.bmp"
+IDB_TXT_DOC             BITMAP  DISCARDABLE     "res\\TXT_DOC.bmp"
+IDB_XLS_DOC             BITMAP  DISCARDABLE     "res\\XLS_DOC.bmp"
+IDB_PPT_DOC             BITMAP  DISCARDABLE     "res\\PPT_DOC.bmp"
+IDB_JPG_DOC             BITMAP  DISCARDABLE     "res\\JPG_DOC.bmp"
+IDB_DBF_DOC             BITMAP  DISCARDABLE     "res\\DBF_DOC.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""Winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""DesktopToolbox.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DesktopToolbox Module\0"
+            VALUE "FileVersion", "3,5,2,3\0"
+            VALUE "InternalName", "DesktopToolbox\0"
+            VALUE "LegalCopyright", "Copyright 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "DesktopToolbox.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "DesktopToolbox Module\0"
+            VALUE "ProductVersion", "3,5,2,3\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TASK_ICON           ICON    DISCARDABLE     "res\\TaskIcon.ico"
+IDI_GODESKTOP           ICON    DISCARDABLE     "res\\idr_GODESKTOP.ico"
+IDI_TASK_ABOUT          ICON    DISCARDABLE     "res\\task_about.ico"
+IDI_EDIT_DESKTOP_NAME   ICON    DISCARDABLE     "res\\edit_des.ico"
+IDI_GODESKTOPWIN2       ICON    DISCARDABLE     "res\\godeskto2.ico"
+IDI_SETUP               ICON    DISCARDABLE     "res\\setup.ico"
+IDI_TASK_START          ICON    DISCARDABLE     "res\\task_start.ico"
+IDI_TASK_ICON_L         ICON    DISCARDABLE     "res\\task_ico_l.ico"
+IDI_TASK_ICON_N         ICON    DISCARDABLE     "res\\TASKICON_N.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SELECT              CURSOR  DISCARDABLE     "res\\IDC_SELECT.CUR"
+IDC_POINTER             CURSOR  DISCARDABLE     "res\\H_POINT.CUR"
+IDC_NORMAL              CURSOR  DISCARDABLE     "res\\IDC_NORMAL.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "_pop_", INACTIVE
+    BEGIN
+        MENUITEM "*Customize ....",             ID_POP_CONFIG
+        MENUITEM "About My Desktop Toolbox  ",  ID_POP_ABOUTMYDESKTOPTOOLBOX
+        POPUP "Arrange Desktop Toolbox"
+        BEGIN
+            MENUITEM "*Arrangement       ",         ID_POP_ARRANGEDESKTOPTOOLBOX_ARRANGEMENT
+
+            MENUITEM "Fit to Right",                ID_POP_SHOWDESKTOPTOOLBOX_RIGHTPANEL
+
+            MENUITEM "Fit to Left",                 ID_POP_SHOWDESKTOPTOOLBOX_LEFTPANEL
+
+            MENUITEM "Fit to Top",                  ID_POP_SHOWDESKTOPTOOLBOX_TOPPANEL
+
+            MENUITEM "Hide",                        ID_POP_SHOWDESKTOPTOOLBOX_HIDEDESKTOPPANEL
+
+            MENUITEM "Show",                        ID_POP_ARRANGEDESKTOPTOOLBOX_SHOW
+
+        END
+        MENUITEM "Desk4u.net on the web",       ID_POP_HOWTOUSEMYDESKTOPTOOLBOX
+
+        MENUITEM "Register Product Online ...", ID_REGISTRATION
+        MENUITEM "Exit",                        ID_POP_EXITMYDSKTOPTOOLBOX
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "DesktopToolbox"
+    IDS_MYBUTTON_DESC       "myButton Class"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "DesktopToolbox.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

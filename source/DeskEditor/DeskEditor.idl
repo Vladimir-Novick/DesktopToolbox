@@ -1,0 +1,20 @@
+// DeskEditor.idl : IDL source for DeskEditor.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DeskEditor.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(ADAD67A2-4752-11D4-9F4B-005004816FFF),
+	version(1.0),
+	helpstring("DeskEditor 1.0 Type Library")
+]
+library DeskEditorLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

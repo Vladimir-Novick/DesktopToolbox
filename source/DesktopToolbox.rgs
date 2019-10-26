@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{7D30A78C-F67C-49D5-B9B0-54A8BBC91BE4} = s 'DesktopToolbox'
+		'DesktopToolbox.EXE'
+		{
+			val AppID = s {7D30A78C-F67C-49D5-B9B0-54A8BBC91BE4}
+		}
+	}
+}

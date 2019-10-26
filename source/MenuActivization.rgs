@@ -1,0 +1,21 @@
+HKCR
+{
+	DesktopToolbox.MenuActivization.1 = s 'MenuActivization Class'
+	{
+		CLSID = s '{7E2CF675-EFB9-40B0-9E0E-2EB562253005}'
+	}
+	DesktopToolbox.MenuActivization = s 'MenuActivization Class'
+	{
+		CLSID = s '{7E2CF675-EFB9-40B0-9E0E-2EB562253005}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {7E2CF675-EFB9-40B0-9E0E-2EB562253005} = s 'MenuActivization Class'
+		{
+			ProgID = s 'DesktopToolbox.MenuActivization.1'
+			VersionIndependentProgID = s 'DesktopToolbox.MenuActivization'
+			val AppID = s '{7D30A78C-F67C-49D5-B9B0-54A8BBC91BE4}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

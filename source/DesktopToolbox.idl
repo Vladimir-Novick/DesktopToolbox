@@ -1,0 +1,40 @@
+// DesktopToolbox.idl : IDL source for DesktopToolbox.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DesktopToolbox.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	
+	[
+		object,
+		uuid(3AB45C7F-2B38-4E32-A15C-FF4DD3AC4829),
+		dual,
+		helpstring("ImyButton Interface"),
+		pointer_default(unique)
+	]
+	interface ImyButton : IDispatch
+	{
+	};
+
+[
+	uuid(2F886BDF-C66B-4EF2-80F8-60C25E9EE9BB),
+	version(1.0),
+	helpstring("DesktopToolbox 1.0 Type Library")
+]
+library DESKTOPTOOLBOXLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	
+	[
+		uuid(B7F99F4D-6D27-4D66-AB6A-D6E5207945F2),
+		helpstring("myButton Class")
+	]
+	coclass myButton
+	{
+		[default] interface ImyButton;
+	};
+};

@@ -1,0 +1,21 @@
+HKCR
+{
+	DesktopToolbox.myButton.1 = s 'myButton Class'
+	{
+		CLSID = s '{B7F99F4D-6D27-4D66-AB6A-D6E5207945F2}'
+	}
+	DesktopToolbox.myButton = s 'myButton Class'
+	{
+		CLSID = s '{B7F99F4D-6D27-4D66-AB6A-D6E5207945F2}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B7F99F4D-6D27-4D66-AB6A-D6E5207945F2} = s 'myButton Class'
+		{
+			ProgID = s 'DesktopToolbox.myButton.1'
+			VersionIndependentProgID = s 'DesktopToolbox.myButton'
+			val AppID = s '{7D30A78C-F67C-49D5-B9B0-54A8BBC91BE4}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}
